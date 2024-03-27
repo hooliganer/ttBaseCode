@@ -1,0 +1,6 @@
+framework module ttBaseCode {
+  umbrella header "ttBaseCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

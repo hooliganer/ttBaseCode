@@ -1,0 +1,22 @@
+{
+  "name": "ttBaseCode",
+  "version": "0.1.0",
+  "summary": "A short description of ttBaseCode.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tantao/ttBaseCode",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tantao": "taoerist@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/tantao/ttBaseCode.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ttBaseCode/Classes/**/*"
+}
