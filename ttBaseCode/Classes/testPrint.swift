@@ -9,9 +9,9 @@ import Foundation
 
 public class TestTool {
     
-    static let shared = TestTool()
+    public static let shared = TestTool()
     
-    func testPrint(text: String) {
+    public func testPrint(text: String) {
         debugPrint(text)
     }
 }
