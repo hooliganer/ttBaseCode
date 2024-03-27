@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TestTool {
+public class TestTool {
     
     static let shared = TestTool()
     
