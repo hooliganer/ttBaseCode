@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - ttBaseCode (1.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - ttBaseCode (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   ttBaseCode:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   ttBaseCode: d22d001790e46ef4b299f1f6bd6d52eabe04bd0e
 
-PODFILE CHECKSUM: 08d0ab83f742d7aca91e63675f5f72371c3864e9
+PODFILE CHECKSUM: 76d55b9def62428e9dd849e2781e99c61afde256
 
 COCOAPODS: 1.15.2
