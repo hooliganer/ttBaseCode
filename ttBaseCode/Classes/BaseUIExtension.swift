@@ -44,7 +44,7 @@ public extension UIWindow {
 }
 
 @available(iOS 13.0, *)
-extension View {
+public extension View {
     
     func maxWidth() -> some View { self.frame(maxWidth: .infinity) }
     
