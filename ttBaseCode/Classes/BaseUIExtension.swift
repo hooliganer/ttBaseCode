@@ -112,6 +112,26 @@ public extension View {
             .font(.system(size: font.pointSize, weight: .medium))
             .lineSpacing(scaledLineHeight - font.lineHeight)
     }
+    
+    /// 扩展View，添加if -> bool 函数
+    @ViewBuilder
+    func `if`<Content: View>(_ conditional: Bool, modify: (Self) -> Content) -> some View {
+        if conditional {
+            modify(self)
+        } else {
+            self
+        }
+    }
+    
+    /// 扩展View，添加if -> optional 函数
+    @ViewBuilder
+    func `if`<Content: View, T>(value: T?, content: (Self, T) -> Content) -> some View {
+        if let value = value {
+            content(self, value)
+        } else {
+            self
+        }
+    }
 }
 
 @available(iOS 13.0, *)
