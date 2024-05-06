@@ -42,3 +42,42 @@ public extension UIWindow {
         return UIApplication.shared.keyWindow
     }
 }
+
+@available(iOS 13.0, *)
+extension View {
+    
+    func maxWidth() -> some View { self.frame(maxWidth: .infinity) }
+    
+    func maxHeight() -> some View { self.frame(maxHeight: .infinity) }
+    
+    func maxSize(alignment: Alignment = .center) -> some View {
+        self.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: alignment)
+    }
+    
+    func height(_ height: CGFloat) -> some View { self.frame(height: height) }
+    
+    func width(_ width: CGFloat) -> some View { self.frame(width: width) }
+    
+    /// 设置宽高相等的size
+    /// - Parameter value: 数值
+    /// - Returns: View
+    func size(_ value: CGFloat) -> some View { self.frame(width: value, height: value) }
+    
+    func backgroundColor(_ color: Color) -> some View {  self.background(color) }
+    
+    @available(iOS 15.0, *)
+    func backgroundGradientColor(_ colors: [Color] =  [.red, .orange],
+                                   startPoint: UnitPoint = .top,
+                                   endPoint: UnitPoint = .bottom) -> some View {
+        self.background {
+            LinearGradient(colors: colors, startPoint: startPoint, endPoint: endPoint)
+        }
+    }
+    
+    func scroll() -> some View {
+        ScrollView(.vertical) {
+            self
+        }
+    }
+    
+}
