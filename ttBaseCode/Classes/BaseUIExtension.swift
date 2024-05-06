@@ -80,4 +80,90 @@ public extension View {
         }
     }
     
+    func anyView() -> AnyView { AnyView(self) }
+    
+    func corner_radius_normal(_ value: CGFloat) -> some View {
+        self.clipShape(RoundedRectangle(cornerSize: .init(width: value, height: value)))
+    }
+    
+    func corner_radius_only(_ value: CGFloat, edges: [Alignment] = []) -> some View {
+        self.clipShape(OnlyCornerShape(radius: value, edges: edges))
+    }
+    
+    func border_line(radius: CGFloat,
+                     color: Color = .black,
+                     line_width: CGFloat = 1) -> some View {
+        self.cornerRadius(radius)
+            .overlay(
+                RoundedRectangle(cornerRadius: radius, style: .continuous)
+                    .stroke(color, lineWidth: line_width)
+            )
+            .padding(line_width)
+    }
+    
+    /// 设置行高
+    /// - Parameter lineHeight: 行高
+    /// - Returns: View
+    func line_height(_ lineHeight: CGFloat) -> some View {
+        let font = UIFont.preferredFont(forTextStyle: .body)
+        let scaledLineHeight = UIFontMetrics.default.scaledValue(for: lineHeight)
+        
+        return self
+            .font(.system(size: font.pointSize, weight: .medium))
+            .lineSpacing(scaledLineHeight - font.lineHeight)
+    }
+}
+
+@available(iOS 13.0, *)
+struct OnlyCornerShape: Shape {
+    
+    var radius: CGFloat
+    
+    var edges: [Alignment]
+    
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            if edges.contains(.topLeading) {
+                path.move(to: .init(x: 0, y: radius))
+                path.addArc(center: .init(x: radius, y: radius),
+                            radius: radius,
+                            startAngle: .init(degrees: -180),
+                            endAngle: .init(degrees: -90),
+                            clockwise: false)
+            } else {
+                path.move(to: .zero)
+            }
+            
+            if edges.contains(.topTrailing) {
+                path.addArc(center: .init(x: rect.width - radius, y: radius),
+                            radius: radius,
+                            startAngle: .init(degrees: -90),
+                            endAngle: .init(degrees: 0),
+                            clockwise: false)
+            } else {
+                path.addLine(to: .init(x: rect.width, y: 0))
+            }
+            
+            if edges.contains(.bottomTrailing) {
+                path.addArc(center: .init(x: rect.width - radius, y: rect.height - radius),
+                            radius: radius,
+                            startAngle: .init(degrees: 0),
+                            endAngle: .init(degrees: 90),
+                            clockwise: false)
+            } else {
+                path.addLine(to: .init(x: rect.width, y: rect.height))
+            }
+            
+            if edges.contains(.bottomLeading) {
+                path.addArc(center: .init(x: radius, y: rect.height - radius),
+                            radius: radius,
+                            startAngle: .init(degrees: 90),
+                            endAngle: .init(degrees: 180),
+                            clockwise: false)
+            } else {
+                path.addLine(to: .init(x: 0, y: rect.height))
+            }
+        }
+    }
+    
 }
