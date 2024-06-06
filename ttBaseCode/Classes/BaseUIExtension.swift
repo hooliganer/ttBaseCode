@@ -132,6 +132,7 @@ public extension View {
             self
         }
     }
+    
 }
 
 @available(iOS 13.0, *)
