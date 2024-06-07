@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import ttBaseCode
+import SwiftUI
 
+@available(iOS 14.0, *)
 class ViewController: UIViewController {
+    
+    @TDefaultWrap("testbool", defaultValue: false)
+    var testbool: Bool
+    
+    @TDefaultWrap("model", defaultValue: TestStruct(name: "默认文案"))
+    var model: TestStruct
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.testbool = true
+        
+        
+        print(model)
         
     }
 
@@ -23,3 +36,13 @@ class ViewController: UIViewController {
 
 }
 
+struct TestStruct: Codable {
+    var name: String?
+    var num: Int?
+    var boolValue: Bool?
+    var model: SubModel?
+    
+    struct SubModel: Codable {
+        var text: String?
+    }
+}

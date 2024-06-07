@@ -9,28 +9,36 @@ import Foundation
 
 public class TUserdefaults {
     static func set<T: Codable>(_ value: T, key: Key<T>) {
-        UserDefaults.standard.setValue(value, forKey: key.key)
-        UserDefaults.standard.synchronize()
-//        if isSwiftCodableType(ValueType.self) || isFoundationCodableType(ValueType.self) {
-//            userDefaults.set(value, forKey: key._key)
-//            return
-//        }
-//
-//        do {
-//            let encoder = JSONEncoder()
-//            // https://stackoverflow.com/questions/59473051/userdefault-property-wrapper-not-saving-values-ios-versions-below-ios-13/59475086#59475086
-//            let encoded = try encoder.encode(Wrapper(wrapped: value))
-//            userDefaults.set(encoded, forKey: key._key)
-//            userDefaults.synchronize()
-//        } catch {
-//            #if DEBUG
-//                print(error)
-//            #endif
-//        }
+        if T.self is BaseUserDefaultsType.Type {
+            UserDefaults.standard.setValue(value, forKey: key.key)
+            UserDefaults.standard.synchronize()
+            return
+        }
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(value)
+            UserDefaults.standard.setValue(data, forKey: key.key)
+            UserDefaults.standard.synchronize()
+        } catch let error {
+            debugPrint("===== 【 \(error) 】  =====")
+        }
     }
     
     static func get<T: Codable>(_ key: Key<T>) -> T? {
-        UserDefaults.standard.value(forKey: key.key) as? T
+        if T.self is BaseUserDefaultsType.Type {
+            return UserDefaults.standard.value(forKey: key.key) as? T
+        }
+        guard let data = UserDefaults.standard.data(forKey: key.key) else {
+            return nil
+        }
+        do {
+            let decoder = JSONDecoder()
+            let value = try decoder.decode(T.self, from: data)
+            return value
+        } catch let error {
+            debugPrint("===== 【 \(error) 】  =====")
+            return nil
+        }
     }
     
     static func clear<T: Codable>(_ key: Key<T>) {
@@ -43,10 +51,6 @@ public class TUserdefaults {
             self.key = key
         }
     }
-}
-
-protocol LegalUserdefaultsDelegate {
-    
 }
 
 @propertyWrapper
@@ -67,7 +71,7 @@ public struct TOptionalWrap<T: Codable> {
     
     var key: TUserdefaults.Key<T>
     
-    init(_ key: String) {
+    public init(_ key: String) {
         self.key = TUserdefaults.Key(key)
     }
 }
@@ -88,8 +92,21 @@ public struct TDefaultWrap<T: Codable> {
         }
     }
     
-    init(_ key: String, defaultValue: T) {
+    public init(_ key: String, defaultValue: T) {
         self.key = TUserdefaults.Key(key)
         self.defaultValue = defaultValue
     }
 }
+
+protocol BaseUserDefaultsType {}
+
+extension Bool: BaseUserDefaultsType {}
+extension Int: BaseUserDefaultsType {}
+extension Float: BaseUserDefaultsType {}
+extension Double: BaseUserDefaultsType {}
+extension String: BaseUserDefaultsType {}
+extension URL: BaseUserDefaultsType {}
+extension Date: BaseUserDefaultsType {}
+extension Data: BaseUserDefaultsType {}
+extension Array: BaseUserDefaultsType where Element: BaseUserDefaultsType {}
+extension Dictionary: BaseUserDefaultsType where Key == String, Value: BaseUserDefaultsType {}
