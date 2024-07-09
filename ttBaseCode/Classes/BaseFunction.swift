@@ -5,7 +5,7 @@
 //  Created by 谭滔 on 2024-04-01.
 //
 
-import Foundation
+import SwiftUI
 
 public class MyLinkListNode<Element> {
     public var val: Element
@@ -45,4 +45,31 @@ public extension Array {
         head.next = convertArrayToNodeList(array, i: i + 1)
         return head
     }
+}
+
+@available(iOS 15.0, *)
+public struct MoreHeightTextFieldStyle: TextFieldStyle {
+    
+    @FocusState private var isFocus: Bool
+    
+    public var height: CGFloat
+    
+    public init(height: CGFloat) {
+        self.height = height
+    }
+    
+    public func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .height(height)
+            .focused($isFocus)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                isFocus = true
+            }
+    }
+}
+
+@available(iOS 15.0, *)
+public extension TextFieldStyle {
+    static func height(_ val: CGFloat) -> MoreHeightTextFieldStyle { MoreHeightTextFieldStyle(height: val) }
 }

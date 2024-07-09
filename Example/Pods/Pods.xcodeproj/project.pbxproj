@@ -7,32 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BC70386F47D142B7A4D83FEA98F1485 /* ttBaseCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEDD24F7ADC08571D2AEBE752A07CB9B /* ttBaseCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CD8448A773D3A1158AAF22117CA40A2 /* ttBaseCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C5B742FC1A9F45072A72A4D12C884 /* ttBaseCode-dummy.m */; };
-		31235FF8276C170D05EA084D8293AD90 /* TUserdefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F2538C37560DFDFE4ED7A9C6D29521 /* TUserdefaults.swift */; };
 		4B4443020B7FB16600E1DB0E0D9DE911 /* Pods-ttBaseCode_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7E92D5487FDFF2DCF5D1E9119B65F2 /* Pods-ttBaseCode_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504F7B8D5D9B3305C05C211EEA5AAAB5 /* Pods-ttBaseCode_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 383843095A678949AC631D2B87E1EA34 /* Pods-ttBaseCode_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50DA92CEB3EF880B2AAB83CE3534F03B /* testPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB98C91BF5B73D20DF7DF828B826A4 /* testPrint.swift */; };
-		5FF84D2E8487C3C10223EE2FD1236727 /* BaseUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619AF0CD43335CF876963301F78BC1B /* BaseUIExtension.swift */; };
-		665BFFE13FB10E9233B770336792B890 /* BaseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E80DEB5C714826C6D2407960660B0C /* BaseFunction.swift */; };
+		539532A9FD00704D3D98FE32BC588427 /* testPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E995DD5D4A1D826C097A6091BF729A5 /* testPrint.swift */; };
+		53A45592C8A7BFA001CC1DE7818136A5 /* BaseNavPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E9F7210965B7B02EBCB96B8E31234 /* BaseNavPathManager.swift */; };
+		6AEB1013D37B08F50122C0EAD11F06E2 /* BaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FEA7EFB13E1C3C81C2176181A748D /* BaseExtension.swift */; };
 		70335D81CEB2FAEF54F5E8ABEC490590 /* Pods-ttBaseCode_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DDB7180F3067135030BFEF475680A5 /* Pods-ttBaseCode_Tests-dummy.m */; };
+		745484BD8EE63470D03C4B45B0BD27C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8084E01069F7374F7A6434CE1C739335 /* Pods-ttBaseCode_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A16826C4F594C0433358BF059D1A /* Pods-ttBaseCode_Example-dummy.m */; };
 		84E75F57ABD6D3C47948476DF5DDD276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		893B009DFA6AF3DF7E993BC72D2CFDD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DE62DE0E96ED6FCE3E0FCC425DF5799F /* BaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309292D20D7FEB485361AE0E95C3A32 /* BaseExtension.swift */; };
+		AC03105CFD2D5FAF65C515A118634432 /* BaseUIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088A99553E9D1D03D097792120157251 /* BaseUIExtension.swift */; };
+		B186C4C714732332DEC4484740A6C2B5 /* TUserdefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79696B8C6788F26F9350388547118D2 /* TUserdefaults.swift */; };
+		C50CF0832BCA98D6DB3FE4AB7E27CDC9 /* UIExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D495DC9F6C6DBFE94AD95668BF22272A /* UIExtenion.swift */; };
+		C8CFF350A161CDB7C8DD095D4B4C1B6F /* BaseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43D2E39B6BBCBB2DA464EEBACD32B4 /* BaseFunction.swift */; };
+		CD34D237A07B3CE9E367ED71AAE44681 /* ttBaseCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFFB470C6533F503D20915FF94D4ABB /* ttBaseCode-dummy.m */; };
 		EA988D4159F820A0D1AB4319B3B1F40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F4E87EB3712685C6EA80BF5A3C9971A9 /* UIExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719B50C5EB6693AE7468245070D8088 /* UIExtenion.swift */; };
+		F0CC17684E4CA53A8DDBAC6381669F08 /* ttBaseCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3118FECF689E0D13306A2A9743462B35 /* ttBaseCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40A17D714EF8F3AECA30ACA7C0B8C102 /* PBXContainerItemProxy */ = {
+		73C800C83B9B23536A5AC664C7DC44B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0899BB590530ABFABE0A40C7C5978F3B;
 			remoteInfo = "Pods-ttBaseCode_Example";
 		};
-		8A4105B123DD846F59FF25B8DF55535D /* PBXContainerItemProxy */ = {
+		AC2293833B25EE91879B878160418D3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,42 +45,43 @@
 /* Begin PBXFileReference section */
 		05A031CA50A238DD7D4291DC9346D0CA /* Pods-ttBaseCode_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ttBaseCode_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		05A6A16826C4F594C0433358BF059D1A /* Pods-ttBaseCode_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ttBaseCode_Example-dummy.m"; sourceTree = "<group>"; };
+		088A99553E9D1D03D097792120157251 /* BaseUIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseUIExtension.swift; path = ttBaseCode/Classes/BaseUIExtension.swift; sourceTree = "<group>"; };
+		0D43D2E39B6BBCBB2DA464EEBACD32B4 /* BaseFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseFunction.swift; path = ttBaseCode/Classes/BaseFunction.swift; sourceTree = "<group>"; };
 		0F7E92D5487FDFF2DCF5D1E9119B65F2 /* Pods-ttBaseCode_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ttBaseCode_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1E82C0E7478B73771C1EA61A5146A46F /* Pods-ttBaseCode_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ttBaseCode_Tests-Info.plist"; sourceTree = "<group>"; };
 		20B65A16A459C934DA9AE02029E7C5D6 /* Pods-ttBaseCode_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ttBaseCode_Tests"; path = Pods_ttBaseCode_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A0F7263AFD71E4C6A0DD6E3F617FFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3118FECF689E0D13306A2A9743462B35 /* ttBaseCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ttBaseCode-umbrella.h"; sourceTree = "<group>"; };
 		383843095A678949AC631D2B87E1EA34 /* Pods-ttBaseCode_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ttBaseCode_Example-umbrella.h"; sourceTree = "<group>"; };
-		39E80DEB5C714826C6D2407960660B0C /* BaseFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseFunction.swift; path = ttBaseCode/Classes/BaseFunction.swift; sourceTree = "<group>"; };
-		3A5D32EC967239FCA944C7A3D7DB82CD /* ttBaseCode.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ttBaseCode.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4131FCE92C05F07F94AAB999A57F01CC /* ttBaseCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ttBaseCode-prefix.pch"; sourceTree = "<group>"; };
 		41DDB7180F3067135030BFEF475680A5 /* Pods-ttBaseCode_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ttBaseCode_Tests-dummy.m"; sourceTree = "<group>"; };
 		45A351B65D70E2985883A8FF064FAF8B /* Pods-ttBaseCode_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ttBaseCode_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A5C5B742FC1A9F45072A72A4D12C884 /* ttBaseCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ttBaseCode-dummy.m"; sourceTree = "<group>"; };
+		481BA3E9A23E550E8265E58C1666A7D9 /* ttBaseCode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ttBaseCode-Info.plist"; sourceTree = "<group>"; };
 		4DD18DC94471642644A552CA45337B24 /* Pods-ttBaseCode_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ttBaseCode_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		524E9F7210965B7B02EBCB96B8E31234 /* BaseNavPathManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseNavPathManager.swift; path = ttBaseCode/Classes/BaseNavPathManager.swift; sourceTree = "<group>"; };
+		52C497457472512ADF3BBBDB4163C938 /* ttBaseCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ttBaseCode.release.xcconfig; sourceTree = "<group>"; };
 		541410D934D109FDA2335D25A9049D10 /* Pods-ttBaseCode_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ttBaseCode_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6852C95A08C82D90ADB1B9EA7778F45B /* ttBaseCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ttBaseCode-prefix.pch"; sourceTree = "<group>"; };
 		68B759AB55C0289B3214CCA11857BEA6 /* Pods-ttBaseCode_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ttBaseCode_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		71F2538C37560DFDFE4ED7A9C6D29521 /* TUserdefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TUserdefaults.swift; path = ttBaseCode/Classes/TUserdefaults.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78804D1488364A7BF8E310ACBB35F93B /* Pods-ttBaseCode_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ttBaseCode_Example-Info.plist"; sourceTree = "<group>"; };
+		795C559E2492FB1C885C7EA33A9ED7D1 /* ttBaseCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ttBaseCode.modulemap; sourceTree = "<group>"; };
+		8467E65D6C31F01D830B68D15D816ED3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8601CAE8C555D314CAB83D69132CF2F3 /* Pods-ttBaseCode_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ttBaseCode_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8E2149B33D827FF1B9B638560F45BE64 /* ttBaseCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ttBaseCode.modulemap; sourceTree = "<group>"; };
-		9719B50C5EB6693AE7468245070D8088 /* UIExtenion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIExtenion.swift; path = ttBaseCode/Classes/UIExtenion.swift; sourceTree = "<group>"; };
+		8E995DD5D4A1D826C097A6091BF729A5 /* testPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = testPrint.swift; path = ttBaseCode/Classes/testPrint.swift; sourceTree = "<group>"; };
+		98CEB9D67357B1F5A94E3067F2FAF399 /* ttBaseCode.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ttBaseCode.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A106EED45AAE12E23120E06AB33945BC /* Pods-ttBaseCode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ttBaseCode_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A279DAE32D5DB4F46237E0A03E03EE64 /* Pods-ttBaseCode_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ttBaseCode_Example"; path = Pods_ttBaseCode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B592B9641D13818C2AC5AAB7D7236E74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B619AF0CD43335CF876963301F78BC1B /* BaseUIExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseUIExtension.swift; path = ttBaseCode/Classes/BaseUIExtension.swift; sourceTree = "<group>"; };
+		B11FEA7EFB13E1C3C81C2176181A748D /* BaseExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseExtension.swift; path = ttBaseCode/Classes/BaseExtension.swift; sourceTree = "<group>"; };
 		B6A89E0D73750A366D296DBD37D31A40 /* Pods-ttBaseCode_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ttBaseCode_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C80AA30C3E70D83BD39F7FBE2F9C880C /* ttBaseCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ttBaseCode.release.xcconfig; sourceTree = "<group>"; };
-		CEDD24F7ADC08571D2AEBE752A07CB9B /* ttBaseCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ttBaseCode-umbrella.h"; sourceTree = "<group>"; };
+		CCFFB470C6533F503D20915FF94D4ABB /* ttBaseCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ttBaseCode-dummy.m"; sourceTree = "<group>"; };
 		CF1B34293814C7DB39B37D1998679789 /* Pods-ttBaseCode_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ttBaseCode_Example.modulemap"; sourceTree = "<group>"; };
-		CFEB98C91BF5B73D20DF7DF828B826A4 /* testPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = testPrint.swift; path = ttBaseCode/Classes/testPrint.swift; sourceTree = "<group>"; };
-		D33EA4D40AF1C524FDC5CF80FE488F3D /* ttBaseCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ttBaseCode.debug.xcconfig; sourceTree = "<group>"; };
+		D135A9A5C4A1CBD79576A528B43E7303 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D495DC9F6C6DBFE94AD95668BF22272A /* UIExtenion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIExtenion.swift; path = ttBaseCode/Classes/UIExtenion.swift; sourceTree = "<group>"; };
+		D4D2FAE1AC7604B2F9206828CE9A8B59 /* ttBaseCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ttBaseCode.debug.xcconfig; sourceTree = "<group>"; };
+		D79696B8C6788F26F9350388547118D2 /* TUserdefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TUserdefaults.swift; path = ttBaseCode/Classes/TUserdefaults.swift; sourceTree = "<group>"; };
 		E51FE4CA5A10E12F771CF6E3B81114CC /* Pods-ttBaseCode_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ttBaseCode_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E5B9CBBDB37314366070CC594AC8B206 /* ttBaseCode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ttBaseCode-Info.plist"; sourceTree = "<group>"; };
 		E796D5B97F706822E0325BE8132FF866 /* Pods-ttBaseCode_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ttBaseCode_Tests.modulemap"; sourceTree = "<group>"; };
 		EB28653DBC0C35A93AFAF313B167D830 /* ttBaseCode */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ttBaseCode; path = ttBaseCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F309292D20D7FEB485361AE0E95C3A32 /* BaseExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseExtension.swift; path = ttBaseCode/Classes/BaseExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53EE948C9E4594223B5850D7F1FEC97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745484BD8EE63470D03C4B45B0BD27C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92E1F710333F14FA4C09CE23BBE358B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,39 +109,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2E3DF45FFBEB77C879A60B3F95E43FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				893B009DFA6AF3DF7E993BC72D2CFDD8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2649118E17ADCAF4945DEB8C22757BE8 /* ttBaseCode */ = {
+		082102E13C91B5443698E5F26ECCF297 /* ttBaseCode */ = {
 			isa = PBXGroup;
 			children = (
-				F309292D20D7FEB485361AE0E95C3A32 /* BaseExtension.swift */,
-				39E80DEB5C714826C6D2407960660B0C /* BaseFunction.swift */,
-				B619AF0CD43335CF876963301F78BC1B /* BaseUIExtension.swift */,
-				CFEB98C91BF5B73D20DF7DF828B826A4 /* testPrint.swift */,
-				71F2538C37560DFDFE4ED7A9C6D29521 /* TUserdefaults.swift */,
-				9719B50C5EB6693AE7468245070D8088 /* UIExtenion.swift */,
-				888B3A7A9CC52C57344DEE2A9ACFA510 /* Pod */,
-				C60762E1C22E871C037A5A8C18B8C7C8 /* Support Files */,
+				B11FEA7EFB13E1C3C81C2176181A748D /* BaseExtension.swift */,
+				0D43D2E39B6BBCBB2DA464EEBACD32B4 /* BaseFunction.swift */,
+				524E9F7210965B7B02EBCB96B8E31234 /* BaseNavPathManager.swift */,
+				088A99553E9D1D03D097792120157251 /* BaseUIExtension.swift */,
+				8E995DD5D4A1D826C097A6091BF729A5 /* testPrint.swift */,
+				D79696B8C6788F26F9350388547118D2 /* TUserdefaults.swift */,
+				D495DC9F6C6DBFE94AD95668BF22272A /* UIExtenion.swift */,
+				44BC962B4CCC30513F1E6DE7023F34ED /* Pod */,
+				56A1C13F2E862F6E6C4C5A667B917BA2 /* Support Files */,
 			);
 			name = ttBaseCode;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		2FC9243CBACE957C7E5D6D3FD3C0049E /* Development Pods */ = {
+		314E789D1D96093D6A6054588394E6FA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2649118E17ADCAF4945DEB8C22757BE8 /* ttBaseCode */,
+				082102E13C91B5443698E5F26ECCF297 /* ttBaseCode */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		44BC962B4CCC30513F1E6DE7023F34ED /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8467E65D6C31F01D830B68D15D816ED3 /* LICENSE */,
+				D135A9A5C4A1CBD79576A528B43E7303 /* README.md */,
+				98CEB9D67357B1F5A94E3067F2FAF399 /* ttBaseCode.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		490763F3B6D9B64F913F1C400D38874E /* Pods-ttBaseCode_Tests */ = {
@@ -159,6 +172,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		56A1C13F2E862F6E6C4C5A667B917BA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				795C559E2492FB1C885C7EA33A9ED7D1 /* ttBaseCode.modulemap */,
+				CCFFB470C6533F503D20915FF94D4ABB /* ttBaseCode-dummy.m */,
+				481BA3E9A23E550E8265E58C1666A7D9 /* ttBaseCode-Info.plist */,
+				6852C95A08C82D90ADB1B9EA7778F45B /* ttBaseCode-prefix.pch */,
+				3118FECF689E0D13306A2A9743462B35 /* ttBaseCode-umbrella.h */,
+				D4D2FAE1AC7604B2F9206828CE9A8B59 /* ttBaseCode.debug.xcconfig */,
+				52C497457472512ADF3BBBDB4163C938 /* ttBaseCode.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ttBaseCode";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,36 +195,11 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		888B3A7A9CC52C57344DEE2A9ACFA510 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				35A0F7263AFD71E4C6A0DD6E3F617FFF /* LICENSE */,
-				B592B9641D13818C2AC5AAB7D7236E74 /* README.md */,
-				3A5D32EC967239FCA944C7A3D7DB82CD /* ttBaseCode.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		C60762E1C22E871C037A5A8C18B8C7C8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E2149B33D827FF1B9B638560F45BE64 /* ttBaseCode.modulemap */,
-				4A5C5B742FC1A9F45072A72A4D12C884 /* ttBaseCode-dummy.m */,
-				E5B9CBBDB37314366070CC594AC8B206 /* ttBaseCode-Info.plist */,
-				4131FCE92C05F07F94AAB999A57F01CC /* ttBaseCode-prefix.pch */,
-				CEDD24F7ADC08571D2AEBE752A07CB9B /* ttBaseCode-umbrella.h */,
-				D33EA4D40AF1C524FDC5CF80FE488F3D /* ttBaseCode.debug.xcconfig */,
-				C80AA30C3E70D83BD39F7FBE2F9C880C /* ttBaseCode.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ttBaseCode";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2FC9243CBACE957C7E5D6D3FD3C0049E /* Development Pods */,
+				314E789D1D96093D6A6054588394E6FA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				E32315424F7E8478707A2063C5D13019 /* Products */,
 				4BD757F6A58495B8D91CF5DEA477E630 /* Targets Support Files */,
@@ -257,11 +260,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA800F24B3932DFCF2E284939ECEFA93 /* Headers */ = {
+		FA3C3E50C5ADFCCA3E0692A9F125043E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC70386F47D142B7A4D83FEA98F1485 /* ttBaseCode-umbrella.h in Headers */,
+				F0CC17684E4CA53A8DDBAC6381669F08 /* ttBaseCode-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +283,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A101F78355915025DB59D0C5FDC8AB33 /* PBXTargetDependency */,
+				3BB26BFC73F085DBFECB090F1D295FC5 /* PBXTargetDependency */,
 			);
 			name = "Pods-ttBaseCode_Example";
 			productName = Pods_ttBaseCode_Example;
@@ -289,12 +292,12 @@
 		};
 		98F677012EF5C4FF9768ECC0AC120F43 /* ttBaseCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8B0D095BC80B966D4DF2FFDEB452041 /* Build configuration list for PBXNativeTarget "ttBaseCode" */;
+			buildConfigurationList = 0D6AE399FFE099EE6480E4B039885321 /* Build configuration list for PBXNativeTarget "ttBaseCode" */;
 			buildPhases = (
-				CA800F24B3932DFCF2E284939ECEFA93 /* Headers */,
-				009562AB1DC935BAC70432B9C27BE0F7 /* Sources */,
-				E2E3DF45FFBEB77C879A60B3F95E43FD /* Frameworks */,
-				BAE2F3137776B4B5D0759DDD96B8E27A /* Resources */,
+				FA3C3E50C5ADFCCA3E0692A9F125043E /* Headers */,
+				8310C9CE3B83F2865C6DE104B433AC25 /* Sources */,
+				53EE948C9E4594223B5850D7F1FEC97A /* Frameworks */,
+				44CDDAF4929DCFAED821F8A6559CDA52 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -317,7 +320,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				457D065A2E06270FCE5610F25AF18E3B /* PBXTargetDependency */,
+				CD164D5689A2553C00587430554C000B /* PBXTargetDependency */,
 			);
 			name = "Pods-ttBaseCode_Tests";
 			productName = Pods_ttBaseCode_Tests;
@@ -354,6 +357,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		44CDDAF4929DCFAED821F8A6559CDA52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7360CC6671D932F6E22185F724E45D67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,35 +378,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE2F3137776B4B5D0759DDD96B8E27A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		009562AB1DC935BAC70432B9C27BE0F7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE62DE0E96ED6FCE3E0FCC425DF5799F /* BaseExtension.swift in Sources */,
-				665BFFE13FB10E9233B770336792B890 /* BaseFunction.swift in Sources */,
-				5FF84D2E8487C3C10223EE2FD1236727 /* BaseUIExtension.swift in Sources */,
-				50DA92CEB3EF880B2AAB83CE3534F03B /* testPrint.swift in Sources */,
-				1CD8448A773D3A1158AAF22117CA40A2 /* ttBaseCode-dummy.m in Sources */,
-				31235FF8276C170D05EA084D8293AD90 /* TUserdefaults.swift in Sources */,
-				F4E87EB3712685C6EA80BF5A3C9971A9 /* UIExtenion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7BD1433DA27A1FFD95FA86F13615C6F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				70335D81CEB2FAEF54F5E8ABEC490590 /* Pods-ttBaseCode_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310C9CE3B83F2865C6DE104B433AC25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AEB1013D37B08F50122C0EAD11F06E2 /* BaseExtension.swift in Sources */,
+				C8CFF350A161CDB7C8DD095D4B4C1B6F /* BaseFunction.swift in Sources */,
+				53A45592C8A7BFA001CC1DE7818136A5 /* BaseNavPathManager.swift in Sources */,
+				AC03105CFD2D5FAF65C515A118634432 /* BaseUIExtension.swift in Sources */,
+				539532A9FD00704D3D98FE32BC588427 /* testPrint.swift in Sources */,
+				CD34D237A07B3CE9E367ED71AAE44681 /* ttBaseCode-dummy.m in Sources */,
+				B186C4C714732332DEC4484740A6C2B5 /* TUserdefaults.swift in Sources */,
+				C50CF0832BCA98D6DB3FE4AB7E27CDC9 /* UIExtenion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,17 +415,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		457D065A2E06270FCE5610F25AF18E3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ttBaseCode_Example";
-			target = 0899BB590530ABFABE0A40C7C5978F3B /* Pods-ttBaseCode_Example */;
-			targetProxy = 40A17D714EF8F3AECA30ACA7C0B8C102 /* PBXContainerItemProxy */;
-		};
-		A101F78355915025DB59D0C5FDC8AB33 /* PBXTargetDependency */ = {
+		3BB26BFC73F085DBFECB090F1D295FC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ttBaseCode;
 			target = 98F677012EF5C4FF9768ECC0AC120F43 /* ttBaseCode */;
-			targetProxy = 8A4105B123DD846F59FF25B8DF55535D /* PBXContainerItemProxy */;
+			targetProxy = AC2293833B25EE91879B878160418D3E /* PBXContainerItemProxy */;
+		};
+		CD164D5689A2553C00587430554C000B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ttBaseCode_Example";
+			target = 0899BB590530ABFABE0A40C7C5978F3B /* Pods-ttBaseCode_Example */;
+			targetProxy = 73C800C83B9B23536A5AC664C7DC44B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -555,9 +559,9 @@
 			};
 			name = Release;
 		};
-		B51F7B07DD4F5B886E0EAB79348B1CAE /* Debug */ = {
+		86126FE525D12679E78A3D5E76CEB4B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D33EA4D40AF1C524FDC5CF80FE488F3D /* ttBaseCode.debug.xcconfig */;
+			baseConfigurationReference = D4D2FAE1AC7604B2F9206828CE9A8B59 /* ttBaseCode.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -719,9 +723,9 @@
 			};
 			name = Debug;
 		};
-		D7E19365838EA898DAB5DA6AAC81EADC /* Release */ = {
+		E04C1B26651D7301ED3673A208CA2B5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C80AA30C3E70D83BD39F7FBE2F9C880C /* ttBaseCode.release.xcconfig */;
+			baseConfigurationReference = 52C497457472512ADF3BBBDB4163C938 /* ttBaseCode.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -754,6 +758,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D6AE399FFE099EE6480E4B039885321 /* Build configuration list for PBXNativeTarget "ttBaseCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86126FE525D12679E78A3D5E76CEB4B6 /* Debug */,
+				E04C1B26651D7301ED3673A208CA2B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2F6BC8F1A2B6BB72CC53917B835B9BEE /* Build configuration list for PBXNativeTarget "Pods-ttBaseCode_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -777,15 +790,6 @@
 			buildConfigurations = (
 				047AEC9CC5E86BECB6CE7BC311853699 /* Debug */,
 				BC0D6A1692595EB454E4509FE0FAAF30 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8B0D095BC80B966D4DF2FFDEB452041 /* Build configuration list for PBXNativeTarget "ttBaseCode" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B51F7B07DD4F5B886E0EAB79348B1CAE /* Debug */,
-				D7E19365838EA898DAB5DA6AAC81EADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
