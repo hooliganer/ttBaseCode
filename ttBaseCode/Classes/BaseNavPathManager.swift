@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-class BaseNavPathManager: ObservableObject {
+public class BaseNavPathManager: ObservableObject {
     
     @Published var path = NavigationPath()
     
@@ -21,7 +21,7 @@ class BaseNavPathManager: ObservableObject {
 }
 
 @available(iOS 16.0, *)
-extension View {
+public extension View {
     func toPage<PathPage: Hashable>(_ page: PathPage, data: Any? = nil) -> some View {
         self.onTapGesture {
             BaseNavPathManager.toPage(page)
