@@ -65,6 +65,18 @@ public extension View {
     
     func backgroundColor(_ color: Color) -> some View {  self.background(color) }
     
+    func backgroundView<V>(alignment: Alignment = .center, @ViewBuilder content: () -> V) -> some View where V : View {
+        if #available(iOS 15.0, *) {
+            return self.background(alignment: alignment, content: content)
+        } else {
+            return ZStack(alignment: alignment) {
+                content()
+                
+                self
+            }
+        }
+    }
+    
     @available(iOS 15.0, *)
     func backgroundGradientColor(_ colors: [Color] =  [.red, .orange],
                                    startPoint: UnitPoint = .top,
