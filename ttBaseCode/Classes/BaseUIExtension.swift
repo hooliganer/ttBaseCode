@@ -161,9 +161,9 @@ public extension Text {
 @available(iOS 13.0, *)
 public extension Color {
     static var randomColor: Color {
-        let r = Double.random(in: 0...255)
-        let g = Double.random(in: 0...255)
-        let b = Double.random(in: 0...255)
+        let r = Double.random(in: 0...255) / 255
+        let g = Double.random(in: 0...255) / 255
+        let b = Double.random(in: 0...255) / 255
         return .init(red: r, green: g, blue: b)
     }
 }
