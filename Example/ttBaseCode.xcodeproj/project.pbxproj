@@ -14,6 +14,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		820F9409C07CFCC7C4B805D4 /* Pods_ttBaseCode_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712807A4B5430CC4C90CE7A8 /* Pods_ttBaseCode_Example.framework */; };
+		B2FC2FF52C19A35D00322431 /* testPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF42C19A35D00322431 /* testPlayer.swift */; };
+		B2FC2FF72C19A3B900322431 /* TestScrollApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF62C19A3B900322431 /* TestScrollApple.swift */; };
+		B2FC2FF92C1AA29200322431 /* TestPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */; };
 		F090F54F64A749BA9CE604D4 /* Pods_ttBaseCode_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F119DFAE1D8F228D5DCFDF /* Pods_ttBaseCode_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6547082DD8CAF07747EC11B9 /* Pods-ttBaseCode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ttBaseCode_Example.release.xcconfig"; path = "Target Support Files/Pods-ttBaseCode_Example/Pods-ttBaseCode_Example.release.xcconfig"; sourceTree = "<group>"; };
 		712807A4B5430CC4C90CE7A8 /* Pods_ttBaseCode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ttBaseCode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2FC2FF42C19A35D00322431 /* testPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPlayer.swift; sourceTree = "<group>"; };
+		B2FC2FF62C19A3B900322431 /* TestScrollApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollApple.swift; sourceTree = "<group>"; };
+		B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPlayerView.swift; sourceTree = "<group>"; };
 		CDEBBFEBE0FB95B6C6682C25 /* Pods-ttBaseCode_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ttBaseCode_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ttBaseCode_Tests/Pods-ttBaseCode_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6995E4698F3BC136188099C /* Pods-ttBaseCode_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ttBaseCode_Tests.release.xcconfig"; path = "Target Support Files/Pods-ttBaseCode_Tests/Pods-ttBaseCode_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F96D05593EFF2467C2A3B778 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -106,10 +112,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				B2FC2FF62C19A3B900322431 /* TestScrollApple.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				B2FC2FF42C19A35D00322431 /* testPlayer.swift */,
+				B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */,
 			);
 			name = "Example for ttBaseCode";
 			path = ttBaseCode;
@@ -332,7 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B2FC2FF72C19A3B900322431 /* TestScrollApple.swift in Sources */,
+				B2FC2FF92C1AA29200322431 /* TestPlayerView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				B2FC2FF52C19A35D00322431 /* testPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

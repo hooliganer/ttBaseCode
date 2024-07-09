@@ -9,6 +9,8 @@
 import UIKit
 import ttBaseCode
 import SwiftUI
+import Combine
+import AVKit
 
 @available(iOS 14.0, *)
 class ViewController: UIViewController {
@@ -46,3 +48,4 @@ struct TestStruct: Codable {
         var text: String?
     }
 }
+
