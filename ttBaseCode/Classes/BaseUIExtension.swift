@@ -148,6 +148,17 @@ public extension View {
 }
 
 @available(iOS 13.0, *)
+public extension Text {
+    func textColor(_ color: Color) -> Text {
+        if #available(iOS 17.0, *) {
+            return self.foregroundStyle(color)
+        } else {
+            return self.foregroundColor(color)
+        }
+    }
+}
+
+@available(iOS 13.0, *)
 struct OnlyCornerShape: Shape {
     
     var radius: CGFloat
