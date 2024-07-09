@@ -159,6 +159,16 @@ public extension Text {
 }
 
 @available(iOS 13.0, *)
+public extension Color {
+    static var randomColor: Color {
+        let r = Double.random(in: 0...255)
+        let g = Double.random(in: 0...255)
+        let b = Double.random(in: 0...255)
+        return .init(red: r, green: g, blue: b)
+    }
+}
+
+@available(iOS 13.0, *)
 struct OnlyCornerShape: Shape {
     
     var radius: CGFloat
