@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import ttBaseCode
 
 @available(iOS 13.0, *)
 struct TestScrollApple: View {
@@ -28,12 +29,14 @@ struct TestScrollApple: View {
                     }
                     .frame(height: 0)
                     
-                    ForEach(0..<50) { index in
-                        Text("\(index)")
+                    ForEach(TestScrollAppleType.allCases, id: \.self) { index in
+                        Text(index.title)
                             .frame(height: 40)
                             .padding()
-                            .background(Color.green)
+                            .background(Color.randomColor)
                             .animation(.default, value: offset)
+                            .contentShape(Rectangle())
+                            .toPage(index)
                     }
                 }
                 .padding(.bottom, 100)
@@ -78,5 +81,18 @@ struct OffsetPreferenceKey: PreferenceKey {
     
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = nextValue()
+    }
+}
+
+@available(iOS 13.0, *)
+enum TestScrollAppleType: BaseNavigationPath, CaseIterable {
+    case a
+    case b
+    case c
+    
+    var title: String { String(describing: self) }
+    
+    var page: any View {
+        Text(title)
     }
 }

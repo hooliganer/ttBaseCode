@@ -7,7 +7,7 @@ public class BaseNavPathManager: ObservableObject {
     
     static let shared = BaseNavPathManager()
     
-    static func toPage<PathPage: Hashable>(_ path: PathPage) {
+    static func toPage<PathPage: BaseNavigationPath>(_ path: PathPage) {
         BaseNavPathManager.shared.path.append(path)
     }
     
@@ -20,11 +20,22 @@ public class BaseNavPathManager: ObservableObject {
     }
 }
 
-@available(iOS 16.0, *)
+@available(iOS 13.0, *)
 public extension View {
-    func toPage<PathPage: Hashable>(_ page: PathPage, data: Any? = nil) -> some View {
-        self.onTapGesture {
-            BaseNavPathManager.toPage(page)
+    func toPage<PathPage: BaseNavigationPath>(_ page: PathPage, data: Any? = nil) -> some View {
+        if #available(iOS 16.0, *) {
+            return self.onTapGesture {
+                BaseNavPathManager.toPage(page)
+            }
+        } else {
+            return NavigationLink(destination: page.page.anyView()) {
+                self
+            }
         }
     }
+}
+
+@available(iOS 13.0, *)
+public protocol BaseNavigationPath: Hashable {
+    var page: any View { get }
 }

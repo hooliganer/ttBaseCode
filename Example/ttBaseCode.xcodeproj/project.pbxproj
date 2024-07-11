@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		820F9409C07CFCC7C4B805D4 /* Pods_ttBaseCode_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712807A4B5430CC4C90CE7A8 /* Pods_ttBaseCode_Example.framework */; };
+		B2AFBF102C3FB94A00467DCF /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2AFBF0E2C3FB94A00467DCF /* TestModel.xcdatamodeld */; };
 		B2FC2FF52C19A35D00322431 /* testPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF42C19A35D00322431 /* testPlayer.swift */; };
 		B2FC2FF72C19A3B900322431 /* TestScrollApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF62C19A3B900322431 /* TestScrollApple.swift */; };
 		B2FC2FF92C1AA29200322431 /* TestPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */; };
@@ -47,6 +48,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6547082DD8CAF07747EC11B9 /* Pods-ttBaseCode_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ttBaseCode_Example.release.xcconfig"; path = "Target Support Files/Pods-ttBaseCode_Example/Pods-ttBaseCode_Example.release.xcconfig"; sourceTree = "<group>"; };
 		712807A4B5430CC4C90CE7A8 /* Pods_ttBaseCode_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ttBaseCode_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2AFBF0F2C3FB94A00467DCF /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 		B2FC2FF42C19A35D00322431 /* testPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPlayer.swift; sourceTree = "<group>"; };
 		B2FC2FF62C19A3B900322431 /* TestScrollApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollApple.swift; sourceTree = "<group>"; };
 		B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPlayerView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				B2FC2FF42C19A35D00322431 /* testPlayer.swift */,
 				B2FC2FF82C1AA29200322431 /* TestPlayerView.swift */,
+				B2AFBF0E2C3FB94A00467DCF /* TestModel.xcdatamodeld */,
 			);
 			name = "Example for ttBaseCode";
 			path = ttBaseCode;
@@ -343,6 +346,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				B2FC2FF72C19A3B900322431 /* TestScrollApple.swift in Sources */,
 				B2FC2FF92C1AA29200322431 /* TestPlayerView.swift in Sources */,
+				B2AFBF102C3FB94A00467DCF /* TestModel.xcdatamodeld in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				B2FC2FF52C19A35D00322431 /* testPlayer.swift in Sources */,
 			);
@@ -431,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -586,6 +590,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2AFBF0E2C3FB94A00467DCF /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2AFBF0F2C3FB94A00467DCF /* TestModel.xcdatamodel */,
+			);
+			currentVersion = B2AFBF0F2C3FB94A00467DCF /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

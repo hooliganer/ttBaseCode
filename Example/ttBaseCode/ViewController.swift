@@ -11,6 +11,11 @@ import ttBaseCode
 import SwiftUI
 import Combine
 import AVKit
+import CoreData
+
+extension TCoreDataManager {
+    static let testShared = TCoreDataManager("TestModel")
+}
 
 @available(iOS 14.0, *)
 class ViewController: UIViewController {
@@ -26,9 +31,15 @@ class ViewController: UIViewController {
         
         self.testbool = true
         
-        
-        print(model)
-        
+//        let model: Test1? = TCoreDataManager.testShared.createEntity()
+//        let data = UIImagePNGRepresentation(UIImage(named: "aaaa")!)
+//        model?.image = data
+//        TCoreDataManager.testShared.saveContext()
+
+        let r: NSFetchRequest<Test1> = Test1.fetchRequest()
+
+        let arr: [Test1] = TCoreDataManager.testShared.fetchEntities()
+        debugPrint("===== 【 \(arr) 】  =====")
     }
 
     override func didReceiveMemoryWarning() {
