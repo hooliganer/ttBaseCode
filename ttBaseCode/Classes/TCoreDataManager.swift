@@ -10,7 +10,7 @@ public class TCoreDataManager {
         self.name = name
     }
     
-    lazy var persistentContainer: NSPersistentContainer = {
+    public lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: name)
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
