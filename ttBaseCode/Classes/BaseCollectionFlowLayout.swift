@@ -7,8 +7,8 @@
 
 import UIKit
 
-class BaseCollectionLayout: UICollectionViewFlowLayout {
-    enum AlignType {
+public class BaseCollectionLayout: UICollectionViewFlowLayout {
+    public enum AlignType {
         case left
         case center
         case right
