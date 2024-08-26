@@ -46,7 +46,7 @@ public class BaseCollectionLayout: UICollectionViewFlowLayout {
         self.betweenOfCell = betweenOfCell
     }
 
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let superLayout: [UICollectionViewLayoutAttributes] = super.layoutAttributesForElements(in: rect) ?? [UICollectionViewLayoutAttributes]()
         guard let layoutAttributes = NSArray(array: superLayout, copyItems: true) as? [UICollectionViewLayoutAttributes] else {
             return superLayout
