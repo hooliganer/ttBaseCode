@@ -1,15 +1,22 @@
 PODS:
-  - ttBaseCode (1.0.0)
+  - Alamofire (5.8.1)
+  - ttBaseCode (1.0.0):
+    - Alamofire (~> 5.8.1)
 
 DEPENDENCIES:
   - ttBaseCode (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   ttBaseCode:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ttBaseCode: 4dad27b4b4033548644bb76802f370888c746234
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  ttBaseCode: 71a50d37e9cb46b94452e3fad7d95e043cc097de
 
 PODFILE CHECKSUM: 174bdccb83d003bcaed9cd52e9073f030acb1c3b
 

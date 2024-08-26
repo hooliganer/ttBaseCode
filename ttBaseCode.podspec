@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ttBaseCode/Classes/**/*'
   
+  s.dependency 'Alamofire', '~> 5.8.1'
+  
   # s.resource_bundles = {
   #   'ttBaseCode' => ['ttBaseCode/Assets/*.png']
   # }
@@ -40,3 +42,4 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
