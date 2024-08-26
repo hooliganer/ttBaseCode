@@ -88,7 +88,7 @@ class BaseCollectionLayout: UICollectionViewFlowLayout {
     /// 调整Cell的Frame
     ///
     /// - Parameter layoutAttributes: layoutAttribute 数组
-    func setCellFrame(with layoutAttributes: [UICollectionViewLayoutAttributes]) {
+    private func setCellFrame(with layoutAttributes: [UICollectionViewLayoutAttributes]) {
         guard let collectionView = collectionView else { return }
         var leftX: CGFloat = 0.0
         switch cellType {
