@@ -15,14 +15,14 @@ public class BaseCollectionLayout: UICollectionViewFlowLayout {
     }
 
     /// 两个Cell之间的距离
-    var betweenOfCell: CGFloat {
+    public var betweenOfCell: CGFloat {
         didSet {
             minimumInteritemSpacing = betweenOfCell
         }
     }
 
     /// cell对齐方式
-    var cellType: AlignType = .center
+    public var cellType: AlignType = .center
     
     /// 在居中对齐的时候需要知道这行所有cell的宽度总和
     var sumCellWidth: CGFloat = 0.0
@@ -35,12 +35,12 @@ public class BaseCollectionLayout: UICollectionViewFlowLayout {
         sectionInset = .init(top: 5, left: 5, bottom: 5, right: 5)
     }
 
-    convenience init(_ cellType: AlignType) {
+    public convenience init(_ cellType: AlignType) {
         self.init()
         self.cellType = cellType
     }
 
-    convenience init(_ cellType: AlignType, _ betweenOfCell: CGFloat) {
+    public convenience init(_ cellType: AlignType, _ betweenOfCell: CGFloat) {
         self.init()
         self.cellType = cellType
         self.betweenOfCell = betweenOfCell
